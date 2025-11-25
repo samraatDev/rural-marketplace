@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bharat Rentals - Empowering Rural India | Next-Gen Marketplace</title>
+    <meta name="description" content="India's first rural-focused rental marketplace. Rent electricity, autonomous vehicles, robots, AI infrastructure and more. Delivered to your doorstep via our hub-and-spoke model.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="nav-brand">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="20" cy="20" r="18" stroke="url(#gradient1)" stroke-width="2"/>
+                    <path d="M20 8L26 20L20 32L14 20L20 8Z" fill="url(#gradient2)"/>
+                    <defs>
+                        <linearGradient id="gradient1" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#FF6B35"/>
+                            <stop offset="100%" stop-color="#F7931E"/>
+                        </linearGradient>
+                        <linearGradient id="gradient2" x1="14" y1="8" x2="26" y2="32">
+                            <stop offset="0%" stop-color="#FF6B35"/>
+                            <stop offset="100%" stop-color="#F7931E"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span class="brand-name">Bharat Rentals</span>
+            </div>
+            <div class="nav-links">
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#how-it-works" class="nav-link">How It Works</a>
+                <a href="#coverage" class="nav-link">Coverage</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="btn btn-primary" id="get-started-btn">Get Started</button>
+            </div>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-icon">🚀</span>
+                    <span>Empowering Rural India</span>
+                </div>
+                <h1 class="hero-title">
+                    Rent Anything,<br>
+                    <span class="gradient-text">Anytime, Anywhere</span>
+                </h1>
+                <p class="hero-subtitle">
+                    India's first next-gen rental marketplace designed for rural communities. 
+                    From electricity to autonomous cars, robots to AI infrastructure - 
+                    access what you need, when you need it.
+                </p>
+                <div class="hero-cta">
+                    <button class="btn btn-large btn-primary" id="explore-services-btn">
+                        Explore Services
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M7.5 15L12.5 10L7.5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button class="btn btn-large btn-secondary" id="learn-more-btn">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 10L10 14L14 10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Learn More
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="500">0</div>
+                        <div class="stat-label">Villages Connected</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="10000">0</div>
+                        <div class="stat-label">Active Users</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-target="50">0</div>
+                        <div class="stat-label">Service Hubs</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-card card-float-1">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-content">
+                        <div class="card-title">Power on Demand</div>
+                        <div class="card-subtitle">Rent electricity units</div>
+                    </div>
+                </div>
+                <div class="visual-card card-float-2">
+                    <div class="card-icon">🚗</div>
+                    <div class="card-content">
+                        <div class="card-title">Smart Vehicles</div>
+                        <div class="card-subtitle">Autonomous cars & bikes</div>
+                    </div>
+                </div>
+                <div class="visual-card card-float-3">
+                    <div class="card-icon">🤖</div>
+                    <div class="card-content">
+                        <div class="card-title">AI & Robotics</div>
+                        <div class="card-subtitle">Business automation</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Rent Everything You Need</h2>
+                <p class="section-subtitle">Access cutting-edge technology and essential services without the burden of ownership</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-category="energy">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">⚡</div>
+                    </div>
+                    <h3 class="service-title">Electricity & Power</h3>
+                    <p class="service-description">Rent power units, generators, solar panels, and battery storage systems for your home or business.</p>
+                    <ul class="service-features">
+                        <li>Pay-per-use electricity</li>
+                        <li>Portable generators</li>
+                        <li>Solar power kits</li>
+                        <li>Battery backup systems</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn">Explore Energy</button>
+                </div>
+
+                <div class="service-card" data-category="vehicles">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🚗</div>
+                    </div>
+                    <h3 class="service-title">Autonomous Vehicles</h3>
+                    <p class="service-description">Access self-driving cars, electric bikes, and smart transportation solutions on demand.</p>
+                    <ul class="service-features">
+                        <li>Self-driving cars</li>
+                        <li>Electric scooters & bikes</li>
+                        <li>Agricultural vehicles</li>
+                        <li>Delivery drones</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn">Explore Vehicles</button>
+                </div>
+
+                <div class="service-card" data-category="robotics">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🤖</div>
+                    </div>
+                    <h3 class="service-title">Robots & Automation</h3>
+                    <p class="service-description">Rent agricultural robots, cleaning bots, and automation systems to boost productivity.</p>
+                    <ul class="service-features">
+                        <li>Agricultural robots</li>
+                        <li>Cleaning & maintenance bots</li>
+                        <li>Warehouse automation</li>
+                        <li>Security robots</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn">Explore Robotics</button>
+                </div>
+
+                <div class="service-card" data-category="ai">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🧠</div>
+                    </div>
+                    <h3 class="service-title">AI Infrastructure</h3>
+                    <p class="service-description">Access powerful AI computing, machine learning tools, and business intelligence platforms.</p>
+                    <ul class="service-features">
+                        <li>Cloud AI computing</li>
+                        <li>Business analytics</li>
+                        <li>ML model training</li>
+                        <li>Data processing</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn">Explore AI</button>
+                </div>
+
+                <div class="service-card" data-category="agriculture">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🌾</div>
+                    </div>
+                    <h3 class="service-title">Smart Agriculture</h3>
+                    <p class="service-description">Modern farming equipment, IoT sensors, and precision agriculture tools for better yields.</p>
+                    <ul class="service-features">
+                        <li>Smart irrigation systems</li>
+                        <li>Soil sensors & monitors</li>
+                        <li>Harvesting equipment</li>
+                        <li>Crop drones</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn">Explore Agriculture</button>
+                </div>
+
+                <div class="service-card" data-category="future">
+                    <div class="service-icon-wrapper">
+                        <div class="service-icon">🚁</div>
+                    </div>
+                    <h3 class="service-title">Future Tech</h3>
+                    <p class="service-description">Be the first to access flying cars, advanced drones, and next-generation technology.</p>
+                    <ul class="service-features">
+                        <li>Flying vehicles (coming soon)</li>
+                        <li>Advanced delivery drones</li>
+                        <li>VR/AR equipment</li>
+                        <li>Quantum computing access</li>
+                    </ul>
+                    <button class="btn btn-outline service-btn">Explore Future Tech</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Hub & Spoke Delivery Model</h2>
+                <p class="section-subtitle">Seamless service delivery to every corner of rural India</p>
+            </div>
+            <div class="hub-spoke-visual">
+                <div class="hub-container">
+                    <div class="central-hub">
+                        <div class="hub-pulse"></div>
+                        <div class="hub-icon">🏢</div>
+                        <div class="hub-label">Central Hub</div>
+                    </div>
+                    <div class="spoke spoke-1">
+                        <div class="spoke-line"></div>
+                        <div class="spoke-node">
+                            <div class="node-icon">🏘️</div>
+                            <div class="node-label">Village 1</div>
+                        </div>
+                    </div>
+                    <div class="spoke spoke-2">
+                        <div class="spoke-line"></div>
+                        <div class="spoke-node">
+                            <div class="node-icon">🏘️</div>
+                            <div class="node-label">Village 2</div>
+                        </div>
+                    </div>
+                    <div class="spoke spoke-3">
+                        <div class="spoke-line"></div>
+                        <div class="spoke-node">
+                            <div class="node-icon">🏘️</div>
+                            <div class="node-label">Village 3</div>
+                        </div>
+                    </div>
+                    <div class="spoke spoke-4">
+                        <div class="spoke-line"></div>
+                        <div class="spoke-node">
+                            <div class="node-icon">🏘️</div>
+                            <div class="node-label">Village 4</div>
+                        </div>
+                    </div>
+                    <div class="spoke spoke-5">
+                        <div class="spoke-line"></div>
+                        <div class="spoke-node">
+                            <div class="node-icon">🏘️</div>
+                            <div class="node-label">Village 5</div>
+                        </div>
+                    </div>
+                    <div class="spoke spoke-6">
+                        <div class="spoke-line"></div>
+                        <div class="spoke-node">
+                            <div class="node-icon">🏘️</div>
+                            <div class="node-label">Village 6</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Browse & Select</h3>
+                    <p class="step-description">Choose from our wide range of rental services through our mobile-friendly platform.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Book & Schedule</h3>
+                    <p class="step-description">Select your rental duration and delivery time. Flexible options from hourly to monthly.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Hub Dispatch</h3>
+                    <p class="step-description">Your order is processed at the nearest hub and prepared for delivery.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <h3 class="step-title">Doorstep Delivery</h3>
+                    <p class="step-description">Receive your rental at your doorstep with setup assistance and training if needed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coverage Section -->
+    <section class="coverage" id="coverage">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Expanding Across Rural India</h2>
+                <p class="section-subtitle">Starting with key regions and growing every day</p>
+            </div>
+            <div class="coverage-content">
+                <div class="coverage-map">
+                    <div class="map-placeholder">
+                        <div class="map-marker marker-1" data-state="Uttar Pradesh">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">UP</div>
+                        </div>
+                        <div class="map-marker marker-2" data-state="Bihar">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">Bihar</div>
+                        </div>
+                        <div class="map-marker marker-3" data-state="Madhya Pradesh">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">MP</div>
+                        </div>
+                        <div class="map-marker marker-4" data-state="Rajasthan">
+                            <div class="marker-dot"></div>
+                            <div class="marker-label">Rajasthan</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="coverage-info">
+                    <h3 class="coverage-title">Currently Serving</h3>
+                    <div class="state-list">
+                        <div class="state-item">
+                            <span class="state-icon">📍</span>
+                            <span class="state-name">Uttar Pradesh</span>
+                            <span class="state-villages">150 villages</span>
+                        </div>
+                        <div class="state-item">
+                            <span class="state-icon">📍</span>
+                            <span class="state-name">Bihar</span>
+                            <span class="state-villages">120 villages</span>
+                        </div>
+                        <div class="state-item">
+                            <span class="state-icon">📍</span>
+                            <span class="state-name">Madhya Pradesh</span>
+                            <span class="state-villages">100 villages</span>
+                        </div>
+                        <div class="state-item">
+                            <span class="state-icon">📍</span>
+                            <span class="state-name">Rajasthan</span>
+                            <span class="state-villages">130 villages</span>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary check-coverage-btn">Check Your Area</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <h2 class="cta-title">Ready to Transform Your Life?</h2>
+                <p class="cta-subtitle">Join thousands of rural Indians accessing world-class technology</p>
+                <div class="cta-actions">
+                    <button class="btn btn-large btn-primary">Start Renting Today</button>
+                    <button class="btn btn-large btn-secondary">Talk to an Expert</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <div class="footer-brand">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="20" cy="20" r="18" stroke="url(#gradient3)" stroke-width="2"/>
+                            <path d="M20 8L26 20L20 32L14 20L20 8Z" fill="url(#gradient4)"/>
+                            <defs>
+                                <linearGradient id="gradient3" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#FF6B35"/>
+                                    <stop offset="100%" stop-color="#F7931E"/>
+                                </linearGradient>
+                                <linearGradient id="gradient4" x1="14" y1="8" x2="26" y2="32">
+                                    <stop offset="0%" stop-color="#FF6B35"/>
+                                    <stop offset="100%" stop-color="#F7931E"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span class="brand-name">Bharat Rentals</span>
+                    </div>
+                    <p class="footer-description">Empowering rural India with access to next-generation technology and services through our innovative rental marketplace.</p>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Electricity & Power</a></li>
+                        <li><a href="#services">Autonomous Vehicles</a></li>
+                        <li><a href="#services">Robots & Automation</a></li>
+                        <li><a href="#services">AI Infrastructure</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#coverage">Coverage</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+911800000000">+91 1800 000 000</a></li>
+                        <li><a href="mailto:hello@bharatrentals.in">hello@bharatrentals.in</a></li>
+                        <li>Available 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bharat Rentals. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
